@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'android.snek.server'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.10'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.10'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket:2.1.8.RELEASE'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.20'
+
+}
+
+test {
+    useJUnitPlatform()
+}
